@@ -17,18 +17,12 @@
 
 }
 
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
-
 .logo {
+  background-image: url(../images/logo_place_header.svg);
   height: 32px;
   width: 228px;
 
 }
-
-
 
 .logo_place_header {
   position: absolute;
@@ -41,33 +35,46 @@
   position: relative;
   align-self:center;
   left: 64px;
+  z-index: 1;
+  font-size: 102px;
+  line-height: 96px;
+  width: 730px;
 }
 
 .header__subtitle{
-  height: 80px;
   width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
-  margin: 0px;
-
+  z-index: 1;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .header__main-illustration {
-  background-image: url(..\images\header-image.png);
-  height: 765px;
-  width: 608px;
+  background-image: url(../images/header-image.png);
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
+.header__square-pic {
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  height: 568px;
+  width: 568px;
+  background-color: rgb(38, 101, 226);
+  z-index: -1;
+}
 
 .flex-column {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-
-
-
 
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
