@@ -7,13 +7,17 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: "Helvetica Neue", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   min-height: 600px;
   max-height: 756px;
+  width: 100vw;
   /* выше установили ограничения для секции */
+  position: relative;
 
 }
 
@@ -31,17 +35,18 @@
   z-index: 1;
 }
 
-.header__title{
+.header__title {
   position: relative;
-  align-self:center;
+  align-self: center;
   left: 64px;
   z-index: 1;
   font-size: 102px;
   line-height: 96px;
   width: 730px;
+  font-weight: 600;
 }
 
-.header__subtitle{
+.header__subtitle {
   width: 388px;
   position: absolute;
   bottom: 30px;
@@ -49,6 +54,7 @@
   z-index: 1;
   font-size: 18px;
   line-height: 25px;
+  font-weight: normal;
 }
 
 .header__main-illustration {
@@ -66,14 +72,62 @@
   top: 64px;
   height: 568px;
   width: 568px;
-  background-color: rgb(38, 101, 226);
+  background-color: #2f80ed;
   z-index: -1;
 }
 
 .flex-column {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 15px 0px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+
+.two-columns__span {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
 }
 
 /* и элемента с модификатором вида ключ-значение */
