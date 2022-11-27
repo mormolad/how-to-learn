@@ -6,22 +6,19 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
-  height: 100vh;
+  display: flex;
+  justify-content: space-between;
   min-height: 600px;
   max-height: 756px;
+  width: 100vw;
   /* выше установили ограничения для секции */
   position: relative;
-}
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
 }
 
 .logo {
@@ -31,7 +28,7 @@
 
 }
 
-.logo__place_header {
+.logo_place-header {
   position: absolute;
   left: 64px;
   top: 30px;
@@ -82,14 +79,104 @@
 
 .flex-column {
   display: flex;
-  height: 100%;
+  justify-content: space-around;
+}
+
+.main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+
+}
+
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  margin: 15px 0px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
 }
 
 
+.two-columns__span {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+
+.section-title {
+  margin-top: 100px;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-subtitle {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+}
+
+.digits {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.table {
+  display: flex;
+  width: 1100px;
+  flex-flow: column wrap;
+}
+
+.table__row {
+  display: flex;
+  flex-flow: row;
+  margin: top 60px;
+}
+
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_dark {
+.table__cell_theme_dark-side {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.table__cell_theme_white-side {
+  width: 250px;
+  color: #000;
+  margin-right: 0;
+  margin-top: 60px;
 }
