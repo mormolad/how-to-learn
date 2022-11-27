@@ -15,7 +15,7 @@
 <body>
   <div class="page">
     <header class="header">
-      <div class="flex-column">
+      <div class="header__flex-column">
         <!-- <img src=".\images\logo_place_header.svg" alt="logo"class="logo logo_place_header"> как лучше все-таки вставлять картинку? через фон или как img? и когда как лучше?-->
         <div class="logo logo__place_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
@@ -27,19 +27,18 @@
         <div class="header__square-pic"></div>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <section class="description">
         <div class="two-columns">
-          <div class="two-columns__brief">
-            <h5>Главные проблемы<br>в обучении</h5>
-          </div>
+          <h5 class="two-columns__brief">Главные проблемы<br>в обучении</h5>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">Ни в школе, ни в институте нас не учат тому, как правильно изучать
               материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные задачи, чтобы лучше
               сдать тест, но часто в итоге это не дает нам реального знания. Зубрежка быстро выветривается и не приносит
               пользы.</p>
 
-            <p class="two-columns__paragraph"><span class="two-columns__span">Вывод:</span> учиться тоже нужно уметь, но
+            <p class="two-columns__paragraph two-columns__paragraph_margin"><span
+                class="two-columns__span-accent">Вывод:</span> учиться тоже нужно уметь, но
               почему-то этому мало где учат. Что с этим делать?</p>
             <p class="two-columns__paragraph">Конкретные техники и упражнения помогают изменить подход к обучению,
               сделать его эффективным и захватывающим. Эти же техники применяются на примере обучения в Практикуме.</p>
@@ -47,58 +46,111 @@
         </div>
       </section>
       <section class="digits">
-        <h1 class="section__title">Цифры и факты</h1>
-        <h2 class="section__subtitle">Про учёбу и мозг</h2>
-        <div class="table">
+        <h1 class="section-title section-title_theme_white">Цифры и факты</h1>
+        <h2 class="section-subtitle">Про учёбу и мозг</h2>
+        <div class="table table_theme_white">
           <div class="table__row">
-            <div class="table__cell table__cell_white">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">86 миллиардов</h3>
               <h4 class="table__text">Число нейронов в мозге человека</h4>
             </div>
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">2.1 миллиарда</h3>
-              <h4 class="table__text">Число нуждающихся в повышении квалификации
-                Всемирный Банк, 2017</h4>
+              <h4 class="table__text">
+                <p>Число нуждающихся в повышении квалификации</p>
+                <p>Всемирный Банк, 2017</p>
+              </h4>
             </div>
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">1000 терабайт</h3>
               <h4 class="table__text">Объём памяти человека</h4>
             </div>
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">500 триллионов</h3>
               <h4 class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека
               </h4>
             </div>
           </div>
           <div class="table__row">
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">420 миллионов</h3>
-              <h4 class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства
-                Всемирный Банк, 2017</h4>
+              <h4 class="table__text">
+                <p>Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
+                <p>Всемирный Банк, 2017</p>
+              </h4>
             </div>
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">17–20 лет</h3>
               <h4 class="table__text">Пик обучаемости</h4>
             </div>
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">1885 год</h3>
               <h4 class="table__text">Открытие кривой забывания</h4>
             </div>
-            <div class="table__cell table__cell_theme_white-side">
+            <div class="table__cell table__cell_theme_white">
               <h3 class="table__heading">1889 год</h3>
               <h4 class="table__text">Открытие условного рефлекса</h4>
             </div>
           </div>
         </div>
-
       </section>
       <section class="feynman">
-
+        <h1 class="feynman__title">Метод <br>Феймана</h1>
+        <h2 class="feynman__subtitle">Выучить и не забыть</h2>
+        <a href="#" class="feynman__link">Подробнее &#8594</a>
+        <img alt="Фейнман" src="./images/feynman.png" class="feynman__image">
       </section>
       <section class="kaufman">
-
+        <h1 class="section-title section-title_theme_dark">Принципы обучения</h1>
+        <h2 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h2>
+        <div class="table table_theme_white">
+          <div class="table__row">
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">1</p>
+              <p class="table__text">Выберите привлекательный проект.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">2</p>
+              <p class="table__text">Сосредоточьтесь на каком-то одном навыке.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">3</p>
+              <p class="table__text">Определите целевой уровень мастерства.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">4</p>
+              <p class="table__text">Разбейте навык на элементы.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">5</p>
+              <p class="table__text">Приготовьте всё необходимое для занятий.</p>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">6</p>
+              <p class="table__text">Устраните препятствия для занятий.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">7</p>
+              <p class="table__text">Выделите специальное время для занятий.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">8</p>
+              <p class="table__text">Создайте быстрые петли обратной связи.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">9</p>
+              <p class="table__text">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
+            </div>
+            <div class="table__cell table__cell_theme_dark">
+              <p class="table__heading">10</p>
+              <p class="table__text">Уделяйте внимание количеству и скорости.</p>
+            </div>
+          </div>
+          <img alt="Треугольник" src=".\images\kaufman-triangle.svg" class="kaufman__image">
       </section>
-    </main> -->
+    </main>
     <footer>
 
     </footer>
