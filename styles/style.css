@@ -10,6 +10,14 @@
 
 }
 
+.link {
+  text-decoration: none;
+}
+
+.header__link {
+  color: #2f80ed;
+}
+
 .header {
   height: 100vh;
   min-height: 600px;
@@ -17,6 +25,7 @@
   /* выше установили ограничения для секции */
   position: relative;
   background-color: #f2f2f2;
+  z-index: -1;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -26,13 +35,12 @@
 }
 
 .logo {
-  background-image: url(../images/logo_place_header.svg);
   height: 32px;
   width: 228px;
-
 }
 
 .logo__place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   left: 64px;
   top: 30px;
@@ -293,4 +301,67 @@
   width: 877px;
   z-index: -1;
 
+}
+
+.footer {
+  min-height: 350px;
+  background-color: #1f1f1f;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+  position: relative;
+  align-items: center;
+  width: 90%;
+  color: #f2f2f2;
+  margin: 60px auto 40px auto;
+
+}
+
+
+.logo__place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.footer__author {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin: 18px 0px;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+}
+
+.flex_column {
+  display: flex;
+  flex-flow: column;
+}
+
+
+.footer__column-link:visited {
+  color: #f2f2f2;
+}
+
+.footer__column-link:active {
+  color: #f2f2f2;
+}
+
+.footer__column-link:link {
+  color: #f2f2f2;
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
 }
