@@ -41,7 +41,7 @@
   width: 228px;
 }
 
-.logo__place_header {
+.logo--place_header {
   background-image: url(../images/logo_place_header.svg);
   position: absolute;
   left: 64px;
@@ -153,7 +153,7 @@
 }
 
 
-.section-title_theme_white {
+.section-title--theme_white {
   margin: 100px 0 0 0;
 
 }
@@ -180,7 +180,7 @@
   justify-content: space-between;
 }
 
-.table__cell_theme_white {
+.table__cell--theme_white {
   width: 250px;
   color: rgb(0, 0, 0);
   margin-top: 60px;
@@ -264,24 +264,24 @@
 
 
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+.table__cell--theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
 }
 
-.table__heading_theme_dark {
+.table__heading--theme_dark {
   text-align: center;
   margin: 80px 0 0 0;
 }
 
-.section-title_theme_dark {
+.section-title--theme_dark {
   width: 60%;
   margin: 90px 0 0 0;
 }
 
-.section-subtitle_theme_dark {
+.section-subtitle--theme_dark {
   width: 60%;
 }
 
@@ -315,7 +315,7 @@
 }
 
 
-.logo__place_footer {
+.logo--place_footer {
   background-image: url(../images/logo_place_footer.svg);
   position: absolute;
   left: 0px;
@@ -333,17 +333,17 @@
   font-weight: normal;
 }
 
-.footer__column_content_copyright {
+.footer__column--content_copyright {
   flex-basis: 711px;
 }
 
-.footer__column_content_info {
+.footer__column--content_info {
   display: flex;
   align-content: flex-start;
   flex-direction: column;
 }
 
-.footer__column_content_social {
+.footer__column--content_social {
   display: flex;
   align-content: flex-start;
   flex-direction: column;
@@ -369,7 +369,7 @@
   color: #f2f2f2;
 }
 
-.footer__column-links {
+.footer__column--links {
   margin: 20px 0 16px 0;
   line-height: 30px;
   font-size: 18px;
