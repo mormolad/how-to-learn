@@ -29,6 +29,11 @@
 .header__square-pic {
   height: 568px;
   width: 568px;
+  position: absolute;
+  right: 0px;
+  top: 64px;
+  background-color: #2f80ed;
+  z-index: -1;
 }
 
 .logo {
@@ -74,16 +79,6 @@
   position: absolute;
   bottom: 0px;
   right: 0px;
-}
-
-.header__square-pic {
-  position: absolute;
-  right: 0px;
-  top: 64px;
-  height: 568px;
-  width: 568px;
-  background-color: #2f80ed;
-  z-index: -1;
 }
 
 .header__flex-column {
@@ -219,7 +214,6 @@
 
 .feynman__title {
   width: 648px;
-  margin: 0px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
@@ -374,13 +368,6 @@
 .footer__column-link:active {
   color: #f2f2f2;
 }
-
-.footer__column_content_social {
-  display: flex;
-  flex-direction: column;
-}
-
-
 
 .footer__column-links {
   margin: 20px 0 16px 0;
