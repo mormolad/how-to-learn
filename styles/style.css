@@ -336,11 +336,11 @@
 }
 
 .footer__column_content_info {
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .footer__column_content_social {
-  justify-content: flex-start
+  justify-content: flex-start;
 }
 
 .footer__column-link {
