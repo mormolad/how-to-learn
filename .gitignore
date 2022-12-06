@@ -48,6 +48,6 @@ Thumbs.db
 *.mov
 *.wmv
 
-texst*.md
+texts*.md
 .editorconfig
 .vscode/
