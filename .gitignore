@@ -49,5 +49,6 @@ Thumbs.db
 *.wmv
 
 texts*.md
+texts*.txt
 .editorconfig
 .vscode/
